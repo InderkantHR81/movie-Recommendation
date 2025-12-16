@@ -1,0 +1,248 @@
+.movie-details {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.movie-details-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.movie-hero {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 40px;
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.movie-poster-large img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.movie-info-section h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.movie-year {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.movie-rating {
+  font-size: 1.3rem;
+  color: #ffa500;
+  margin-bottom: 20px;
+}
+
+.rating-count {
+  font-size: 1rem;
+  color: #999;
+  margin-left: 10px;
+}
+
+.genre-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.genre-tag {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.movie-crew {
+  margin-bottom: 20px;
+}
+
+.movie-crew p {
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.movie-description {
+  margin-top: 20px;
+}
+
+.movie-description h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.movie-description p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.showtimes-section {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.showtimes-section h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.date-selector {
+  margin-bottom: 30px;
+}
+
+.date-selector h3 {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.date-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.date-btn {
+  padding: 12px 20px;
+  background: #f5f5f5;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.date-btn:hover {
+  background: #e8e8e8;
+  border-color: #667eea;
+}
+
+.date-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+}
+
+.showtimes-grid h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.shows-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.show-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.show-card:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.show-info h4 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.show-time {
+  font-size: 1.5rem;
+  color: #667eea;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.show-seats {
+  color: #666;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.show-price {
+  color: #4caf50;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.btn-watch {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-watch:hover {
+  transform: translateY(-2px);
+}
+
+.btn-watch:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.no-shows {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 968px) {
+  .movie-hero {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .movie-poster-large {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .shows-list {
+    grid-template-columns: 1fr;
+  }
+}

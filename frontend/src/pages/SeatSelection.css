@@ -1,0 +1,297 @@
+.seat-selection {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding-bottom: 40px;
+}
+
+.seat-selection-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.movie-header {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.movie-header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.show-details {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.theater-name {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid #c33;
+  text-align: center;
+}
+
+.seat-layout-section {
+  background: white;
+  padding: 40px 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.screen {
+  width: 80%;
+  height: 60px;
+  background: linear-gradient(to bottom, #333, #666);
+  margin: 0 auto 50px;
+  border-radius: 50% 50% 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.screen-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.seat-grid {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  justify-content: center;
+}
+
+.row-label {
+  font-weight: 700;
+  color: #667eea;
+  width: 30px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.seats-in-row {
+  display: flex;
+  gap: 8px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ddd;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  background: #4caf50;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seat.available {
+  background: #4caf50;
+  border-color: #45a049;
+}
+
+.seat.available:hover {
+  background: #45a049;
+  transform: scale(1.1);
+}
+
+.seat.selected {
+  background: #667eea;
+  border-color: #5568d3;
+  transform: scale(1.1);
+}
+
+.seat.booked {
+  background: #f44336;
+  border-color: #da190b;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.seat.held {
+  background: #ff9800;
+  border-color: #e68900;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.seat:disabled {
+  cursor: not-allowed;
+}
+
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-item .seat {
+  width: 30px;
+  height: 30px;
+  cursor: default;
+}
+
+.legend-item span {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.selection-summary {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.summary-info h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.no-selection {
+  color: #999;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.selected-seats-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.selected-seat-badge {
+  background: #667eea;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn-add-more {
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+  margin-bottom: 20px;
+}
+
+.btn-add-more:hover {
+  background: #45a049;
+}
+
+.price-summary {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.price-detail {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.price-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.btn-confirm {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-confirm:hover {
+  transform: translateY(-2px);
+}
+
+.btn-confirm:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .seat {
+    width: 30px;
+    height: 30px;
+    font-size: 0.75rem;
+  }
+
+  .seats-in-row {
+    gap: 5px;
+  }
+
+  .seat-legend {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
