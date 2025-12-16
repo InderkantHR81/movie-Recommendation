@@ -1,0 +1,21 @@
+{
+    "name": "movie-recommendation-system",
+    "version": "1.0.0",
+    "description": "AI-powered Movie Recommendation System using MERN stack",
+    "main": "index.js",
+    "scripts": {
+        "dev": "cd backend && npm run dev",
+        "client": "cd frontend && npm run dev",
+        "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+        "seed": "cd backend && node scripts/seedMovies.js"
+    },
+    "keywords": [
+        "movie",
+        "recommendation",
+        "mern",
+        "ai",
+        "chatbot"
+    ],
+    "author": "",
+    "license": "MIT"
+}
